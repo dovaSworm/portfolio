@@ -1,0 +1,48 @@
+@import 'mixin';
+#hero {
+    color: white;
+    background: url(../img/noviehro.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+    min-height: calc(100% + 50px);
+    p:hover {
+        cursor: pointer;
+        /* width: calc(100% + 35px); */
+        text-shadow: none;
+        border: 2px solid rgba(27, 205, 233, 0.6);
+        background: rgba(27, 205, 233, 0.1);
+    }
+    div.m-auto {
+        position: relative;
+        padding-top: 200px;
+        @include small-device {
+            padding-top: 100px;
+        }
+    }
+    p {
+        font-size: 1.7rem;
+        text-shadow: none;
+        color: $mypink;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        width: calc(100% + 35px);
+        border: 2px solid rgba(32, 255, 0, 0.2);
+        @include small-device {
+            font-size: 1.1rem;
+            padding: 10px;
+        }
+    }
+    h1,
+    p {
+        font-weight: 300;
+    }
+    p i {
+        margin-left: 15px;
+        color: $mygreen;
+    }
+}

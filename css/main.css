@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+.st1 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #FF00BD;
+  fill-opacity: 0.44;
+}
+
+.st2 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #FF9300;
+  fill-opacity: 0.44;
+}
+
+.st3 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #25FF00;
+  fill-opacity: 0.44;
+}
+
+.st4 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #e8f7c1;
+  fill-opacity: 0.84;
+}
+
+.st5 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #f0f5f0;
+  fill-opacity: 0.74;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  /* display: grid; */
+  background: #282A2C;
+  /* grid-template-columns: auto; */
+}
+
+svg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+p {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+div {
+  position: relative;
+}
+
+.col,
+> [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#about {
+  margin: 0;
+  padding: 80px 0 20px 0;
+  background: url(../img/aboutnovi.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#about h2 {
+  margin-bottom: 50px;
+}
+
+#about h4,
+#about p {
+  margin-top: 15px;
+  color: white;
+}
+
+#about p {
+  padding: 10px 5px 0 5px;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  #about p {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #about div > img {
+    height: 80px;
+  }
+}
+
+#portfolio {
+  height: 900px;
+}
+
+#contact {
+  height: 900px;
+}
+/*# sourceMappingURL=main.css.map */

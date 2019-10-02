@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+.st1 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #FF00BD;
+  fill-opacity: 0.44;
+}
+
+.st2 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #FF9300;
+  fill-opacity: 0.44;
+}
+
+.st3 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #25FF00;
+  fill-opacity: 0.44;
+}
+
+.st4 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #e8f7c1;
+  fill-opacity: 0.84;
+}
+
+.st5 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #f0f5f0;
+  fill-opacity: 0.74;
+}
+
+#navbar {
+  z-index: 1000;
+  border-bottom: 2px solid #25FF00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  width: 100%;
+  padding: 5px 0;
+  overflow: hidden;
+  background-color: #02040c;
+}
+
+#navbar a.nav-link {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 10px 10px 0 10px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+#navbar a img {
+  height: 2.2rem;
+}
+
+#navbar a.navbar-brand {
+  padding: 0 !important;
+  margin: 0;
+}
+
+#navbar #navbarNavDropdown {
+  margin-right: 120px;
+}
+
+.sticky + #about {
+  padding-top: 60px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(2, 4, 12, 0.5);
+}
+/*# sourceMappingURL=navbar.css.map */

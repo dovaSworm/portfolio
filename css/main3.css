@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    /* display: grid; */
+    background: #282A2C;
+    /* grid-template-columns: auto; */
+}
+
+svg {
+    align-self: center;
+    justify-self: center;
+}
+
+.sticky+#about {
+    padding-top: 60px;
+}
+
+nav {
+    width: 100%;
+}
+
+#navbar {
+    border-bottom: 2px solid #25FF00;
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    padding: 5px 0;
+    overflow: hidden;
+    background-color: rgb(2, 4, 12);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(2, 4, 12, .5);
+}
+
+
+/* Navbar links */
+
+#navbar a.nav-link {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px 0 10px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+#hero {
+    color: white;
+    background: url(../img/noviehro.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+#hero h1,
+p {
+    font-weight: 300;
+}
+
+a img {
+    height: 50px;
+}
+
+a.navbar-brand {
+    padding: 0!important;
+    margin: 0;
+}
+
+
+/* .navbar-toggler {
+    background-color: #25FF00!important;
+    color: #25FF00;
+} */
+
+
+/* section:nth-of-type(1) {
+    padding: 0 10px;
+    color: #fff;
+    height: calc(100vh + 53px);
+} */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    width: fit-content!important;
+}
+
+#hero p {
+    font-size: 1.7rem;
+    text-shadow: none;
+    color: rgb(255, 0, 165);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: calc(100% + 35px);
+    border: 2px solid rgba(32, 255, 0, 0.2);
+}
+
+p i {
+    margin-left: 15px;
+    color: #25FF00;
+}
+
+div {
+    position: relative;
+}
+
+#hero p:hover {
+    cursor: pointer;
+    /* width: calc(100% + 35px); */
+    text-shadow: none;
+    border: 2px solid rgba(27, 205, 233, 0.6);
+    background: rgba(27, 205, 233, 0.1);
+}
+
+#hero div.m-auto {
+    position: relative;
+    padding-top: 200px;
+}
+
+@media (max-width: 768px) {
+    #navbarNavDropdown {
+        /* display: flex; */
+        flex-direction: column;
+    }
+    #hero div.m-auto {
+        padding-top: 100px;
+    }
+}
+
+
+/* #hero div.m-auto div.text-center {
+    padding-top: 200px;
+} */
+
+#about {
+    margin: 0;
+    padding: 0;
+    height: 900px;
+    background: url(../img/abautmoj.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#portfolio {
+    height: 900px;
+}
+
+#contact {
+    height: 900px;
+}
+
+@keyframes mojaAnima {
+    from {
+        opacity: 1;
+        /* cy: 439;
+        cx: 867; */
+    }
+    to {
+        opacity: 0;
+        /* cy: 1439;
+        cx: 1867; */
+    }
+}
+
+@keyframes mojaAnima2 {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        /* cy: 1439;
+        cx: 1867; */
+    }
+}
+
+.test1 {
+    animation-duration: 2.5s;
+    animation-name: mojaAnima;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.test2 {
+    animation-duration: 3.5s;
+    /* animation-delay: 1s; */
+    animation-name: mojaAnima;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.test3 {
+    animation-duration: 4.5s;
+    /* animation-delay: 1s; */
+    animation-name: mojaAnima;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.test4 {
+    /* opacity: 1; */
+    animation-duration: 2.5s;
+    /* animation-delay: 1s; */
+    animation-name: mojaAnima2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.test5 {
+    r: 11;
+    fill: #eff0f7;
+    ;
+}
+
+.test6 {
+    opacity: 1;
+}
+
+.st0 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #030512;
+}
+
+.st1 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #FF00BD;
+    fill-opacity: 0.44;
+}
+
+.st2 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #FF9300;
+    fill-opacity: 0.44;
+}
+
+.st3 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #25FF00;
+    fill-opacity: 0.44;
+}
+
+.st4 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: rgb(232, 247, 193);
+    fill-opacity: 0.84;
+}
+
+.st5 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: rgb(240, 245, 240);
+    fill-opacity: 0.74;
+}

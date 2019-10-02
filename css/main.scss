@@ -1,0 +1,48 @@
+@import 'mixin';
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    /* display: grid; */
+    background: #282A2C;
+    /* grid-template-columns: auto; */
+}
+
+svg {
+    align-self: center;
+    justify-self: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    @include small-device {
+        font-size: 2rem;
+    }
+}
+
+p {
+    width: fit-content!important;
+}
+
+div {
+    position: relative;
+}
+
+.col,
+>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}

@@ -1,0 +1,40 @@
+@import 'mixin';
+#navbar {
+    z-index: 1000;
+    border-bottom: 2px solid $mygreen;
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    padding: 5px 0;
+    overflow: hidden;
+    background-color: rgb(2, 4, 12);
+    a.nav-link {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 10px 10px 0 10px;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+    }
+    a img {
+        height: 2.2rem;
+    }
+    a.navbar-brand {
+        padding: 0!important;
+        margin: 0;
+    }
+    #navbarNavDropdown {
+        margin-right: 120px;
+    }
+}
+
+.sticky+#about {
+    padding-top: 60px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(2, 4, 12, .5);
+}
