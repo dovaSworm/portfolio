@@ -81,8 +81,17 @@
 
 #about .bar .bar-name {
   padding: 2px;
+  padding-top: 6px;
   background: #223a59;
   width: 20%;
+}
+
+@media (max-width: 767px) {
+  #about .bar .bar-name {
+    padding-top: 7px;
+    width: 27%;
+    font-size: smaller;
+  }
 }
 
 #about .bar .empty-star {
@@ -113,7 +122,7 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
     background: #00C1FF;
-    width: 7%;
+    width: 8%;
   }
 }
 
@@ -226,7 +235,7 @@ li {
   height: 140px;
   width: 140px;
   border-radius: 50%;
-  background: #df8cdf;
+  background: #eef8fb;
   background-size: cover;
   opacity: .4;
   content: "";

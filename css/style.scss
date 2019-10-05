@@ -61,8 +61,14 @@
         justify-content: space-between;
         .bar-name {
             padding: 2px;
+            padding-top: 6px;
             background: #223a59;
             width: 20%;
+            @include small-device {
+                padding-top: 7px;
+                width: 27%;
+                font-size: smaller;
+            }
         }
         .empty-star {
             background: $myblue!important;
@@ -87,7 +93,7 @@
                 display: -ms-inline-flexbox;
                 display: inline-flex;
                 background: #00C1FF;
-                width: 7%;
+                width: 8%;
             }
         }
         span {
@@ -211,7 +217,7 @@ li {
     height: 140px;
     width: 140px;
     border-radius: 50%;
-    background: rgb(223, 140, 223);
+    background: #eef8fb;
     background-size: cover;
     opacity: .4;
     content: "";
