@@ -1,7 +1,7 @@
 @import 'mixin';
 #hero {
     color: white;
-    background: url(../img/noviehro.svg) no-repeat;
+    background: url(../img/testhero.svg) no-repeat;
     background-position: center;
     background-size: cover;
     /* width: 100%; */
@@ -25,13 +25,13 @@
     p {
         font-size: 1.7rem;
         text-shadow: none;
-        color: $mypink;
+        color: #00c1ff;
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         padding: 20px;
         width: calc(100% + 35px);
-        border: 2px solid rgba(32, 255, 0, 0.2);
+        border: 2px solid rgba(127, 234, 248, 0.2);
         @include small-device {
             font-size: 1.1rem;
             padding: 10px;
@@ -43,6 +43,6 @@
     }
     p i {
         margin-left: 15px;
-        color: $mygreen;
+        color: $mylily;
     }
 }

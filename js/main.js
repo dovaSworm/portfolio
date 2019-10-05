@@ -26,29 +26,34 @@ $(function() {
         $.each($("#navbar a.nav-link"), function(i, val) {
             if (obj.relatedTarget === $(this).attr("href")) {
                 var col = $(this).css("color");
-                $(this).css("border-bottom", "2px solid " + col);
+                $(this).css("color", "ff0053!important");
+                $(this).css("border-bottom", "2px solid " + "#e7eef3");
             } else {
                 removeBorder($(this));
             }
         });
     });
+    // var nizCardova = $(".port-card::before");
+    console.log($("div.col-lg-4.col-sm-12:last-of-type()").outerHeight());
+    var portCardHeight = ($("div.col-lg-4.col-sm-12:last-of-type()").outerHeight());
+    $("div.col-lg-4.col-sm-12").css("height", "portCardHeight" + "px");
     // if ($(window).width() > 1024) {
     //     $("div.col-sm-12").removeClass("d-flex");
     // }
 
-    $.each($("#navbar a"), function(i, val) {
+    // $.each($("#navbar a"), function(i, val) {
 
-        if (val.text === "PORTFOLIO") {
-            $(this).css("color", "#FF9300");
-        } else if (val.text === "Skills") {
-            $(this).css("color", "#4dca6f");
-        } else if (val.text === "ABOUT") {
-            $(this).css("color", "#00C1FF");
-        } else if (val.text === "CONTACT") {
-            $(this).css("color", "#25FF00");
-        } else if (val.text === "HOME") {
-            $(this).css("color", "#FF00BD");
-        }
-    });
+    //     if (val.text === "PORTFOLIO") {
+    //         $(this).css("color", "#00c1ff");
+    //     } else if (val.text === "Skills") {
+    //         $(this).css("color", "#00c1ff");
+    //     } else if (val.text === "ABOUT") {
+    //         $(this).css("color", "#00c1ff");
+    //     } else if (val.text === "CONTACT") {
+    //         $(this).css("color", "#00c1ff");
+    //     } else if (val.text === "HOME") {
+    //         $(this).css("color", "#00c1ff");
+    //     }
+    // });
 
 });

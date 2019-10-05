@@ -11,8 +11,13 @@ body {
     font-family: 'Raleway', sans-serif;
     width: 100%;
     /* display: grid; */
-    background: #282A2C;
+    // background: #282A2C;
     /* grid-template-columns: auto; */
+    .col,
+    >[class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 
 svg {
@@ -39,10 +44,4 @@ p {
 
 div {
     position: relative;
-}
-
-.col,
->[class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
 }
