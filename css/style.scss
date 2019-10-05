@@ -166,8 +166,6 @@ li {
     }
 }
 
-
-}
 #about::before {
     position: absolute;
     top: 0;
@@ -180,10 +178,12 @@ li {
     content: "";
     z-index: -1;
 }
+
 ////////////////////////////////////prtfolio///////////////////////////////////////////////////////////
 .container {
     position: relative;
 }
+
 #portfolio h2:after {
     position: absolute;
     // top: 0;
@@ -199,6 +199,7 @@ li {
     content: "";
     z-index: -1;
 }
+
 #portfolio h2:before {
     position: absolute;
     // top: 0;
@@ -219,6 +220,7 @@ li {
         margin-left: -70px;
     }
 }
+
 #portfolio::before {
     position: absolute;
     top: 0;
@@ -231,6 +233,7 @@ li {
     content: "";
     z-index: -1;
 }
+
 #portfolio {
     position: relative;
     background-size: cover;
@@ -247,7 +250,6 @@ li {
             margin-bottom: 80px;
         }
     }
-    
     img {
         display: block;
         width: auto;
@@ -259,14 +261,12 @@ li {
         //     position: absolute;
         // }
     }
-    
     p {
         height: 100%;
         @include small-device {
             height: 100%;
         }
     }
-    
     p::after {
         left: 0;
         top: -15px;
@@ -280,11 +280,9 @@ li {
         position: absolute;
         background: $myblue;
     }
-    
     img#zadnji:hover {
         right: 0;
     }
-    
     div.col-lg-4 {
         // height: 434px;
         // padding: 10px;
@@ -292,7 +290,6 @@ li {
             // height: auto;
         }
     }
-    
     .port-card {
         // -webkit-transition: border 2s;
         /* Safari prior 6.1 */
@@ -360,12 +357,12 @@ li {
             }
         }
     }
-    
     // div.col-lg-4.col-sm-12 {
     //     background-size: cover;
     //     background: url(../img/vekolino.png);
     // }
 }
+
 .port-card.third-pc::before {
     position: absolute;
     top: 0;
@@ -379,6 +376,7 @@ li {
     content: "";
     z-index: -1;
 }
+
 .port-card.first-pc::before {
     position: absolute;
     top: 0;
@@ -392,6 +390,7 @@ li {
     content: "";
     z-index: -1;
 }
+
 .port-card.second-pc::before {
     position: absolute;
     top: 0;
@@ -405,6 +404,7 @@ li {
     content: "";
     z-index: -1;
 }
+
 .port-card::after {
     -webkit-transition: opacity 1s;
     transition: opacity 1s;
@@ -424,6 +424,7 @@ li {
         margin: 20px;
     }
 }
+
 ////////////////////////////////////////////CONTACT///////////////////////////////////////////////////
 #contact::before {
     position: absolute;
@@ -438,6 +439,7 @@ li {
     content: "";
     z-index: -1;
 }
+
 #contact {
     margin-top: -70px;
     clip-path: polygon(50% 7%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -448,23 +450,19 @@ li {
         clip-path: polygon(50% 7%, 100% 0, 100% 100%, 0 100%, 0 0);
         margin-top: -60px;
     }
-    
     h2 {
         // width: fit-content;
         // border-bottom: 4px solid $mylily;
         margin-bottom: 40px;
     }
-    
     .row {
         margin-top: 30px;
     }
-    
     p {
         padding: 0 10px;
         margin: 10px 0;
         color: $myblue;
     }
-    
     a {
         color: inherit;
         &:hover {
@@ -472,7 +470,6 @@ li {
             color: $mylily;
         }
     }
-    
     form {
         p {
             width: 100%!important;
@@ -498,6 +495,7 @@ li {
         }
     }
 }
+
 ///////////////////////////////FOOTER/////////////////////////////////////
 footer {
     color: $mylily;
@@ -506,7 +504,6 @@ footer {
     @include small-device {
         // clip-path: polygon(6% 0, 94% 0, 100% 100%, 0% 100%);
     }
-    
     a img {
         margin: auto;
         width: 200px;
