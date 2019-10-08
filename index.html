@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/navbar.css">
     <title>Danijel Doveden</title>
 </head>
@@ -19,19 +20,19 @@
     <section id="hero" class="flex">
         <div class="m-auto">
             <div class="text-center">
-                <h1>Hello, my name is <span style="color:#00c1ff">Danijel</span> <span style="color:#00c1ff">Doveden</span>.<br>I'am full-stack web developer.</h1>
-                <p>Wiev my works<i class="fas fa-arrow-right"></i>
+                <h1 class="anima-hero">Hello, my name is <span style="color:#00c1ff">Danijel</span> <span style="color:#00c1ff">Doveden</span>.<br>I'am full-stack web developer.</h1>
+                <p class="anima-down-up"><a href="#portfolio">View my works<i class="fas fa-arrow-right"></i></a>
                 </p>
             </div>
         </div>
         <nav id="navbar" class="navbar navbar-dark  navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+                <!-- <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
+							<span></span><span></span><span></span>
 						  </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav m-auto">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#hero">HOME</a>
                         </li>
@@ -53,7 +54,7 @@
     <main>
         <section id="about">
             <div class="container">
-                <h2 class="text-center"><img src="img/about.png" alt="sssss"></h2>
+                <h2 class="text-center">ABOUT</h2>
                 <div class="row no-gutters text-center">
                     <div class="col-6 col-lg-3">
                         <img src="img/licht.png" alt="sssss">
@@ -77,105 +78,38 @@
                     </div>
                 </div>
                 <div class="row no-gutters text-center">
-                    <div class="col-lg-6 text-center flex-column py-5 px-lg-2">
+                    <div class="col-lg-6 text-center flex-column px-lg-2">
                         <img src="img/zaprofil2.jpg" alt="sssss">
                         <h4>Who am I?</h4>
                         <p class="text-center">I'am full-stack web developer.I have passion for designig and developing intuitive and dynamic UI and API. Together we can make dreams come true.</p>
                     </div>
-                    <div class="col-lg-6 py-5">
+                    <div class="col-lg-6">
                         <div class="text-cent pb-3">
                             <h4>What i know best?</h4>
                         </div>
-                        <div class="bar shadow-lg">
-                            <div class="bar-name">Java
+                        <div class="skill-tree">
+                            <div class="row no-gutters">
+                                <div class="mm-buttons">
+                                    <span>Major</span><span>Minor</span>
+                                </div>
+                                <div class="col-12">
+
+                                    <div class="skill-buttons col-3">
+                                        Frontend
+                                    </div>
+                                    <div class="skill-buttons col-3">
+                                        Frontend
+                                    </div>
+                                    <div class="skill-buttons col-3">
+                                        Frontend
+                                    </div>
+
+                                </div>
                             </div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
                         </div>
-                        <div class="bar shadow-lg">
-                            <div class="bar-name">PHP
-                            </div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-name">Javascript
-                            </div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-name">CSS
-                            </div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                        </div>
-                        <div class="bar">
-                            <div style="opacity:1;" class="bar-name">HTML
-                            </div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-name">Spring
-                            </div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-name">Codeigniter
-                            </div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                        </div>
-                        <div class="bar">
-                            <div style="opacity:1;" class="bar-name">MySql
-                            </div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-name">Android
-                            </div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar-name">Wordpress
-                            </div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div style="opacity:1;" class="bar-star"><span>&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                            <div class="bar-star"><span class=" empty-star">&nbsp</span></div>
-                        </div>
+
+
+
                     </div>
                 </div>
             </div>
@@ -245,7 +179,7 @@
                     </form>
                 </div>
             </div>
-            <div class="row no-gutters">
+            <div class="row no-gutters social">
                 <div class="m-auto col-md-6 d-flex flex-row justify-content-around  justify-content-md-center">
                     <p><a title="+38164/6101-720" href="tel:+38164/6101-720"><i class="fas fa-phone fa-2x"></i></a></p>
                     <p><a href="https://www.linkedin.com/in/danijel-doveden-b5131b170/" title="LinkedIn"><i class="fab fa-linkedin-in fa-2x"></i></a></p>
@@ -275,11 +209,11 @@
 
         // Get the navbar
         var navbar = document.getElementById("navbar");
-
         // Get the offset position of the navbar
         var sticky = navbar.offsetTop;
 
         // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+
         function myFunction() {
             if (window.pageYOffset >= sticky) {
                 navbar.classList.add("sticky")

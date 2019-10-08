@@ -5,9 +5,13 @@
     display: flex;
     justify-items: center;
     width: 100%;
-    padding: 15px 0;
+    padding: 5px 0;
     overflow: hidden;
     background-color: rgb(2, 4, 12);
+    @include small-device {
+        top: -4px;
+        padding: 10px 0;
+    }
     a.nav-link {
         color: #00c1ff;
         float: left;
@@ -21,6 +25,9 @@
         font-weight: bolder;
         color: #e4ebf5;
     }
+    a.nav-link:hover {
+        color: $mylily;
+    }
     a img {
         height: 2.2rem;
     }
@@ -28,8 +35,66 @@
         padding: 0!important;
         margin: 0;
     }
+    .navbar-toggler {
+        color: $myblue;
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+    }
+    button {
+        position: relative;
+        top: 6px;
+        left: 41%;
+        background: transparent;
+        outline: none;
+        border: none;
+        transform-origin: 14px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+        span:first-child {
+            transform-origin: 0% 0%;
+        }
+        span:nth-last-child(2) {
+            transform-origin: 0% 100%;
+        }
+        span {
+            display: block;
+            width: 33px;
+            height: 4px;
+            margin-bottom: 5px;
+            position: relative;
+            background: $myblue;
+            border-radius: 3px;
+            z-index: 1;
+        }
+    }
+    .pritisnut {
+        span:first-child {
+            margin-top: -14px;
+            opacity: 1;
+            transform: rotate(45deg) translateX(13px) translateY(2px);
+            background: $myblue;
+        }
+        span:last-child {
+            opacity: 1;
+            transform: rotate(-45deg) translateX(-1px) translateY(4px);
+        }
+        span:nth-last-child(2) {
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2, 0.2);
+        }
+    }
     #navbarNavDropdown {
-        margin-right: 120px;
+        @include small-device {
+            top: 15px;
+            opacity: 0;
+        }
+    }
+    .navbar-nav {
+        margin-bottom: 10px;
+        margin-left: 15px;
     }
 }
 

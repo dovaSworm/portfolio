@@ -30,6 +30,9 @@
 }
 
 #hero p {
+  opacity: 0;
+  -webkit-animation-delay: 1.5s !important;
+          animation-delay: 1.5s !important;
   font-size: 1.7rem;
   text-shadow: none;
   color: #00c1ff;
@@ -46,6 +49,14 @@
     font-size: 1.1rem;
     padding: 10px;
   }
+}
+
+#hero p a {
+  color: #00c1ff !important;
+}
+
+#hero p a:hover {
+  text-decoration: none !important;
 }
 
 #hero h1,

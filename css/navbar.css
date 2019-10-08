@@ -7,9 +7,16 @@
   display: flex;
   justify-items: center;
   width: 100%;
-  padding: 15px 0;
+  padding: 5px 0;
   overflow: hidden;
   background-color: #02040c;
+}
+
+@media (max-width: 767px) {
+  #navbar {
+    top: -4px;
+    padding: 10px 0;
+  }
 }
 
 #navbar a.nav-link {
@@ -27,6 +34,10 @@
   color: #e4ebf5;
 }
 
+#navbar a.nav-link:hover {
+  color: #721db8;
+}
+
 #navbar a img {
   height: 2.2rem;
 }
@@ -36,8 +47,82 @@
   margin: 0;
 }
 
-#navbar #navbarNavDropdown {
-  margin-right: 120px;
+#navbar .navbar-toggler {
+  color: #00C1FF;
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+#navbar button {
+  position: relative;
+  top: 6px;
+  left: 41%;
+  background: transparent;
+  outline: none;
+  border: none;
+  -webkit-transform-origin: 14px 0px;
+          transform-origin: 14px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#navbar button span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+#navbar button span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+#navbar button span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #00C1FF;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#navbar .pritisnut span:first-child {
+  margin-top: -14px;
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translateX(13px) translateY(2px);
+          transform: rotate(45deg) translateX(13px) translateY(2px);
+  background: #00C1FF;
+}
+
+#navbar .pritisnut span:last-child {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg) translateX(-1px) translateY(4px);
+          transform: rotate(-45deg) translateX(-1px) translateY(4px);
+}
+
+#navbar .pritisnut span:nth-last-child(2) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+@media (max-width: 767px) {
+  #navbar #navbarNavDropdown {
+    top: 15px;
+    opacity: 0;
+  }
+}
+
+#navbar .navbar-nav {
+  margin-bottom: 10px;
+  margin-left: 15px;
 }
 
 .sticky + #about {

@@ -23,6 +23,8 @@
         }
     }
     p {
+        opacity: 0;
+        animation-delay: 1.5s!important;
         font-size: 1.7rem;
         text-shadow: none;
         color: #00c1ff;
@@ -35,6 +37,12 @@
         @include small-device {
             font-size: 1.1rem;
             padding: 10px;
+        }
+    }
+    p a {
+        color: #00c1ff!important;
+        &:hover {
+            text-decoration: none!important;
         }
     }
     h1,
