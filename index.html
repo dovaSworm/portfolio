@@ -20,14 +20,14 @@
     <section id="hero" class="flex">
         <div class="m-auto">
             <div class="text-center">
-                <h1 class="anima-hero">Hello, my name is <span style="color:#00c1ff">Danijel</span> <span style="color:#00c1ff">Doveden</span>.<br>I'am full-stack web developer.</h1>
+                <h1 class="anima-up-down">Hello, my name is <span style="color:#00c1ff">Danijel</span> <span style="color:#00c1ff">Doveden</span>.<br>I'am full-stack web developer.</h1>
                 <p class="anima-down-up"><a href="#portfolio">View my works<i class="fas fa-arrow-right"></i></a>
                 </p>
             </div>
         </div>
         <nav id="navbar" class="navbar navbar-dark  navbar-expand-lg">
             <div class="container">
-                <!-- <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a> -->
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 							<span></span><span></span><span></span>
 						  </button>
@@ -77,33 +77,58 @@
                         <p>My layouts will work on any device, big or small.</p>
                     </div>
                 </div>
-                <div class="row no-gutters text-center">
-                    <div class="col-lg-6 text-center flex-column px-lg-2">
+                <div id="personal" class="row no-gutters text-center">
+                    <div class="col-lg-6 m-auto text-center flex-column px-lg-2">
                         <img src="img/zaprofil2.jpg" alt="sssss">
                         <h4>Who am I?</h4>
-                        <p class="text-center">I'am full-stack web developer.I have passion for designig and developing intuitive and dynamic UI and API. Together we can make dreams come true.</p>
+                        <p class="text-center">I'am full-stack web developer. I have passion for designig and developing intuitive and dynamic UI and API. Together we can make dreams come true.</p>
                     </div>
                     <div class="col-lg-6">
                         <div class="text-cent pb-3">
-                            <h4>What i know best?</h4>
+                            <h4>What i know?</h4>
                         </div>
                         <div class="skill-tree">
                             <div class="row no-gutters">
-                                <div class="mm-buttons">
-                                    <span>Major</span><span>Minor</span>
-                                </div>
                                 <div class="col-12">
+                                    <div class="mm-buttons">
+                                        <span>Major skills</span><span>Minor skills</span>
+                                    </div>
+                                    <div class="d-inline-flex">
 
-                                    <div class="skill-buttons col-3">
-                                        Frontend
+                                        <div class="skill-buttons col-4">
+                                            <span class="skill-title">Backend</span>
+                                            <span class="major">Java</span>
+                                            <span class="major">Spring</span>
+                                            <span class="major">Php</span>
+                                            <span class="minor">Laravel</span>
+                                            <span class="major">Codeigniter</span>
+                                            <span class="minor">Node.js</span>
+                                            <span class="minor">Wordpres</span>
+                                            <span class="major">REST</span>
+                                        </div>
+                                        <div class="skill-buttons col-4">
+                                            <span class="skill-title">Frontend</span>
+                                            <span class="major">Javascript</span>
+                                            <span class="minor">React</span>
+                                            <span class="minor">Vue.js</span>
+                                            <span class="major">HTML</span>
+                                            <span class="major">CSS/Sass</span>
+                                            <span class="major">Bootsrap</span>
+                                            <span class="major">Angular</span>
+                                            <span class="major">JQuery</span>
+                                        </div>
+                                        <div class="skill-buttons col-4">
+                                            <span class="skill-title">Other skills</span>
+                                            <span class="major">Deployment</span>
+                                            <span class="minor">AdobeXD</span>
+                                            <span class="minor">Android</span>
+                                            <span class="major">MySQL</span>
+                                            <span class="major">Git/GitHub</span>
+                                            <span class="minor">Firebase</span>
+                                            <span class="minor">GIMP</span>
+                                            <span class="major">SEO</span>
+                                        </div>
                                     </div>
-                                    <div class="skill-buttons col-3">
-                                        Frontend
-                                    </div>
-                                    <div class="skill-buttons col-3">
-                                        Frontend
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
@@ -116,44 +141,46 @@
             <!--container -->
         </section>
         <section id="portfolio">
-            <h2 class="text-uppercase">portfolio</h2>
-            <div class="row no-gutters">
-                <div class="col-lg-4 col-sm-12">
-                    <div class="port-card first-pc">
-                        <div class="card-inner">
-                            <h5><strong>Protechnology-team</strong></h5>
-                            <p>Service for PC laptop and desktop. Simple static website. Techniques HTML, CSS, Bootstrap, JQuery</p>
-                            <br>
-                            <a href="http://protech-servis.rs/"><button>Wiev site</button>
+            <div class="container">
+                <h2 class="text-uppercase">portfolio</h2>
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="port-card first-pc">
+                            <div class="card-inner">
+                                <h5><strong>Protechnology-team</strong></h5>
+                                <p>Service for PC laptop and desktop. Simple static website. Techniques HTML, CSS, Bootstrap, JQuery</p>
+                                <br>
+                                <a href="http://protech-servis.rs/"><button>Wiev site</button>
                             </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <div class="port-card second-pc">
-                        <div class="card-inner">
-                            <h5><strong>Vekolino SI</strong></h5>
-                            <p>Transporting company website. Simple static page. Techniques HTML, CSS, Bootstrap, JQuery.</p>
-                            <br>
-                            <a href="http://vekolino.si/"><button>Wiev site</button>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="port-card second-pc">
+                            <div class="card-inner">
+                                <h5><strong>Vekolino SI</strong></h5>
+                                <p>Transporting company website. Simple static page. Techniques HTML, CSS, Bootstrap, JQuery.</p>
+                                <br>
+                                <a href="http://vekolino.si/"><button>Wiev site</button>
                                     </a>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- <a href="http://vekolino.si/"><img src="img/vekolino.png" alt="Vekolino SI"></a> -->
                         </div>
                     </div>
-                    <div>
-                        <!-- <a href="http://vekolino.si/"><img src="img/vekolino.png" alt="Vekolino SI"></a> -->
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <div class="port-card third-pc">
-                        <div class="card-inner">
-                            <h5><strong>Protechnology electronics</strong></h5>
-                            <p>Website for company for selling machines and equipments for electronic assembling factories. Techniques PHP, CodeIgniter, HTML, CSS, Bootstrap, JQuery</p>
-                            <a href="http://protechelectronics.000webhostapp.com/"><button>Wiev site</button>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="port-card third-pc">
+                            <div class="card-inner">
+                                <h5><strong>Protechnology electronics</strong></h5>
+                                <p>Website for company for selling machines and equipments for electronic assembling factories. Techniques PHP, CodeIgniter, HTML, CSS, Bootstrap, JQuery</p>
+                                <a href="http://protechelectronics.000webhostapp.com/"><button>Wiev site</button>
                                     </a>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <!-- <a href="https://protechelectronics.000webhostapp.com/"><img id="zadnji" src="img/electronics.png" alt="Protechnology-electornic"></a> -->
+                        <div>
+                            <!-- <a href="https://protechelectronics.000webhostapp.com/"><img id="zadnji" src="img/electronics.png" alt="Protechnology-electornic"></a> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -173,7 +200,7 @@
                             <input type="text" name="email" placeholder="Your email">
                         </p>
                         <p>
-                            <textarea name="message" placeholder="Your message"></textarea>
+                            <textarea rows="6" name="message" placeholder="Your message"></textarea>
                         </p>
                         <button role="button" type="submit" value="Submit">Submit</button>
                     </form>
@@ -197,12 +224,12 @@
     <footer>
         <div class="container">
             <div class="row no-gutters flex-column text-center">
-                <a href="#"><img src="img/logo.png" alt="logo footer"></a>
+                <a href="#"><img src="img/logo8.png" alt="logo footer"></a>
                 <p class="text-center w-100"><small>Copyright © RDdesign 2019. All Rights Reserved</small></p>
             </div>
         </div>
     </footer>
-    <script>
+    <!-- <script>
         window.onscroll = function() {
             myFunction()
         };
@@ -221,10 +248,11 @@
                 navbar.classList.remove("sticky");
             }
         }
-    </script>
+    </script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/anima.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 body,
 html {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -14,8 +13,7 @@ body {
   /* grid-template-columns: auto; */
 }
 
-body .col,
-body > [class*="col-"] {
+[class*="col-"] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -58,5 +56,11 @@ p {
 
 div {
   position: relative;
+}
+
+.col,
+> [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 /*# sourceMappingURL=main.css.map */

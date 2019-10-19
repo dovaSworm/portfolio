@@ -1,7 +1,7 @@
 @import 'mixin';
 body,
 html {
-    height: 100%;
+    // height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -13,11 +13,11 @@ body {
     /* display: grid; */
     // background: #282A2C;
     /* grid-template-columns: auto; */
-    .col,
-    >[class*="col-"] {
-        padding-right: 0;
-        padding-left: 0;
-    }
+}
+
+[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 svg {
@@ -42,6 +42,15 @@ p {
     width: fit-content!important;
 }
 
+// div.container {
+//     padding: 0!important;
+// }
 div {
     position: relative;
+}
+
+.col,
+>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
 }

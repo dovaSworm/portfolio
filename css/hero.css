@@ -7,7 +7,7 @@
   /* width: 100%; */
   margin: 0;
   padding: 0;
-  min-height: calc(100% + 50px);
+  min-height: calc(100vh + 70px);
 }
 
 #hero p:hover {
@@ -59,13 +59,12 @@
   text-decoration: none !important;
 }
 
-#hero h1,
-#hero p {
-  font-weight: 300;
+#hero h1 {
+  padding: 0 3px;
 }
 
 #hero p i {
   margin-left: 15px;
-  color: #721db8;
+  color: #e9d9f5;
 }
 /*# sourceMappingURL=hero.css.map */

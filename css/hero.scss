@@ -7,7 +7,7 @@
     /* width: 100%; */
     margin: 0;
     padding: 0;
-    min-height: calc(100% + 50px);
+    min-height: calc(100vh + 70px);
     p:hover {
         cursor: pointer;
         /* width: calc(100% + 35px); */
@@ -45,12 +45,11 @@
             text-decoration: none!important;
         }
     }
-    h1,
-    p {
-        font-weight: 300;
+    h1 {
+        padding: 0 3px;
     }
     p i {
         margin-left: 15px;
-        color: $mylily;
+        color: #e9d9f5;
     }
 }

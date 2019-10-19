@@ -1,21 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-#about h2:after {
-  position: absolute;
-  margin-left: -134px;
-  height: 80px;
-  width: 2px;
-  background: white;
-  background-size: cover;
-  content: "";
-  z-index: -1;
-}
-
 #about {
   color: white;
   position: relative;
   margin: 0;
   padding: 80px 0 60px 0;
-  background: url(../img/aboutnovi.svg) no-repeat;
+  background: url(../img/aboutnovi2.svg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -33,7 +22,6 @@
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 2px solid white;
   padding: 10px 50px 10px 50px;
   margin-bottom: 140px;
 }
@@ -114,26 +102,32 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
-  background: #252f5a;
+}
+
+#about .skill-tree span {
+  font-size: .85rem;
+  border: 2px solid #e4dbf7;
+  border-radius: 8px;
+  margin: 4px;
+  padding: 4px 0;
+  opacity: .7;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+}
+
+#about .skill-tree span.skill-title {
+  text-transform: uppercase;
+  border: none !important;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  #about .skill-tree span.skill-title {
+    font-size: .7rem;
+  }
 }
 
 #about .skill-tree .skill-buttons {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-#about .skill-tree .skill-buttons span {
-  font-size: .85rem;
-  border: 2px solid black;
-  width: 100%;
-  margin: 1px;
-  padding: 0 2px;
-}
-
-#about .skill-tree .mm-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,34 +135,54 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: left;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
-#about::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-size: cover;
-  opacity: 1;
-  content: "";
-  z-index: -1;
+#about .skill-tree div.d-inline-flex {
+  position: relative;
+  width: 100%;
+}
+
+#about .skill-tree .mm-buttons {
+  margin: auto;
+  width: 60%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: transparent;
+}
+
+#about .skill-tree .mm-buttons span {
+  cursor: pointer;
+  margin: 10px;
+  padding: 5px 10px;
+}
+
+#about .skill-tree .mm-buttons span:hover {
+  font-weight: bolder;
+  background: #cad2f1;
+  color: #00C1FF;
+}
+
+@media (max-width: 767px) {
+  #about .skill-tree .mm-buttons {
+    width: 80%;
+  }
+}
+
+#about .highlight {
+  font-weight: bolder;
+  background: #cad2f1;
+  color: #2c516f;
 }
 
 .container {
   position: relative;
-}
-
-#portfolio h2:after {
-  position: absolute;
-  margin-left: 21px;
-  height: 80px;
-  width: 2px;
-  background: black;
-  background-size: cover;
-  content: "";
-  z-index: -1;
 }
 
 #portfolio::before {
@@ -177,7 +191,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: linear-gradient(45deg, rgba(236, 246, 248, 0.7), rgba(174, 188, 209, 0.7), rgba(233, 247, 250, 0.6));
+  background-image: linear-gradient(60deg, rgba(236, 246, 248, 0.7) 15%, rgba(174, 188, 209, 0.7), rgba(233, 247, 250, 0.6) 85%);
   background-size: cover;
   opacity: 1;
   content: "";
@@ -197,7 +211,6 @@
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 2px solid black;
   padding: 10px 50px 10px 50px;
   margin-bottom: 140px;
 }
@@ -259,8 +272,8 @@
 
 @media (max-width: 767px) {
   #portfolio .port-card {
+    margin-bottom: 5px;
     padding: 45px;
-    margin: 0;
   }
 }
 
@@ -316,12 +329,13 @@
 }
 
 .port-card.third-pc::before {
+  margin: inherit;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background: url(../img/electronics.png);
+  background: url(../img/electronics.jpg);
   background-position: center;
   background-size: cover;
   opacity: .97;
@@ -330,12 +344,13 @@
 }
 
 .port-card.first-pc::before {
+  margin: inherit;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background: url(../img/servis.png);
+  background: url(../img/service.jpg);
   background-position: center;
   background-size: cover;
   opacity: .97;
@@ -344,12 +359,13 @@
 }
 
 .port-card.second-pc::before {
+  margin: inherit;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background: url(../img/vekolino.png);
+  background: url(../img/vekolino.jpg);
   background-position: center;
   background-size: cover;
   opacity: .97;
@@ -397,7 +413,7 @@
   -webkit-clip-path: polygon(50% 7%, 100% 0, 100% 100%, 0 100%, 0 0);
           clip-path: polygon(50% 7%, 100% 0, 100% 100%, 0 100%, 0 0);
   color: #00C1FF;
-  padding: 120px 0;
+  padding: 124px 0;
   position: relative;
 }
 
@@ -480,7 +496,9 @@
 }
 
 footer {
-  color: #721db8;
+  font-size: 12px;
+  padding-top: 10px;
+  color: #e7eef3;
   background-color: #02040c;
 }
 
