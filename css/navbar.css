@@ -9,6 +9,7 @@
   width: 100%;
   padding: 10px 0;
   overflow: hidden;
+  position: unset;
   background-color: #02040c;
 }
 
@@ -124,7 +125,9 @@
 }
 
 .sticky {
-  position: fixed;
+  position: fixed !important;
+  left: 0;
+  right: 0;
   top: 0;
   width: 100%;
 }

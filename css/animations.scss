@@ -1,22 +1,3 @@
-// @keyframes anima-button-pos {
-//     0% {}
-//     100% {
-//         transform: rotate(45deg);
-//     }
-// }
-// button span:first-child {
-//     animation: anima-button-pos .7s forwards 0s linear;
-// }
-// @keyframes anima-button-neg {
-//     0% {}
-//     100% {
-//         transform: rotate(-45deg);
-//         transform-origin: -1px -10px;
-//     }
-// }
-// button span:last-child {
-//     animation: anima-button-neg .7s forwards 0s linear;
-// }
 @keyframes toggler-anima {
     0% {
         transform: rotate(0);

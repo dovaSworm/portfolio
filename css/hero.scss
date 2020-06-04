@@ -1,16 +1,13 @@
-@import 'mixin';
 #hero {
     color: white;
     background: url(../img/testhero.svg) no-repeat;
     background-position: center;
     background-size: cover;
-    /* width: 100%; */
     margin: 0;
     padding: 0;
     min-height: calc(100vh + 70px);
     p:hover {
         cursor: pointer;
-        /* width: calc(100% + 35px); */
         text-shadow: none;
         border: 2px solid rgba(27, 205, 233, 0.6);
         background: rgba(27, 205, 233, 0.1);

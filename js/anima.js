@@ -1,8 +1,23 @@
 $(() => {
     $(window).on('scroll', () => {
         dodajAnimu();
-        stickyNavbar();
+        if (about.offsetTop > 70) {
+            navbar.style.position = "sticky";
+        }
     });
+    var isMobile;
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        isMobile = true;
+    }
+    if (isMobile) {
+        $("nav").addClass("sticky");
+    }
+    if (!isMobile) {
+
+        $(window).on('scroll', () => {
+            stickyNavbar();
+        });
+    }
 
     $("#navbar button").click(function() {
         $(this).toggleClass("pritisnut");
@@ -13,27 +28,36 @@ $(() => {
         $("#navbarNavDropdown").toggleClass("toggler-anima");
     });
 
-    var windowHeight = (window.innerHeight * 5) / 10;
-    var about = document.getElementById("about");
-    var portfolio = document.getElementById("portfolio");
-    var personal = document.getElementById("personal");
-    var contact = document.getElementById("contact");
     var navbar = document.getElementById("navbar");
 
     function stickyNavbar() {
         var sticky = navbar.offsetTop;
         if (window.pageYOffset >= sticky + 70) {
             navbar.classList.add("sticky")
+            var poz = navbar.offsetTop;
+            navbar.style.position = "unset";
+            console.log('nije sticky');
         } else {
+            console.log('sticky');
             navbar.classList.remove("sticky");
+            navbar.style.position = "sticky";
         }
     }
+
+
+    var windowHeight = (window.innerHeight * 5) / 10;
+    var about = document.getElementById("about");
+    var portfolio = document.getElementById("portfolio");
+    var personal = document.getElementById("personal");
+    var contact = document.getElementById("contact");
+
 
     function dodajAnimu() {
         var positionP = portfolio.getBoundingClientRect().top;
         var positionA = about.getBoundingClientRect().top;
         var positionPerson = personal.getBoundingClientRect().top;
         var positionC = contact.getBoundingClientRect().top;
+
 
         if (windowHeight >= positionA) {
             about.getElementsByClassName("col-lg-3")[0].classList.add("anima-left");
@@ -50,6 +74,9 @@ $(() => {
             portfolio.getElementsByClassName("col-lg-4")[0].classList.add("anima-left");
             portfolio.getElementsByClassName("col-lg-4")[1].classList.add("anima-up-down");
             portfolio.getElementsByClassName("col-lg-4")[2].classList.add("anima-right");
+            portfolio.getElementsByClassName("col-lg-4")[3].classList.add("anima-left");
+            portfolio.getElementsByClassName("col-lg-4")[4].classList.add("anima-up-down");
+            portfolio.getElementsByClassName("col-lg-4")[5].classList.add("anima-right");
         }
         if (windowHeight >= positionC) {
             $("#contact .container p.m-auto").addClass("anima-right");
