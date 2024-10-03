@@ -14,59 +14,98 @@
     <link href="./fontawesome-free-6.5.1-web/css/solid.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/starwarsintro.css" />
     <title>Danijel Doveden</title>
   </head>
 
-  <body
-    data-spy="scroll"
-    data-target=".navbar"
-    data-offset="70"
-    class="scrollspy-example"
-  >
+  <body>
     <header>
       <nav id="navbar" class="fixed-top">
         <div class="container d-flex">
-          <img src="img/rddesign-weis-kratki.png" alt="dovedne.com" />
-          <div class="nav-links">
-            <div class="link-h"><a class="nav-link" href="#hero">HOME</a></div>
+          <!-- <img src="img/rddesign-weis-kratki.png" alt="dovedne.com" /> -->
+          <div class="nav-links screen">
+            <div class="link-h">HOME<a class="nav-link" href="#hero"></a></div>
             <div class="link-h">
-              <a class="nav-link" href="#about">ABOUT</a>
+              ABOUT
+              <a class="nav-link" href="#about"></a>
             </div>
             <div class="link-h">
-              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+              PORTFOLIO
+              <a class="nav-link" href="#portfolio"></a>
             </div>
             <div class="link-h">
-              <a class="nav-link" href="#contact">CONTACT</a>
+              CONTACT
+              <a class="nav-link" href="#contact"></a>
             </div>
           </div>
           <div class="toggler">
-            <i class="fas fa-bars fa-2x"></i>
+            <span class="tog-line"></span>
+            <span class="tog-line"></span>
+            <span class="tog-line"></span>
           </div>
         </div>
       </nav>
     </header>
-    <div class="container main-holder">
-      <main>
-        <section id="hero" class="flex">
+    <main>
+      <section id="hero" class="flex">
+        <div class="container">
           <div class="m-auto">
             <div class="text-center">
-              <h1 class="anima-up-down">
+              <!-- <h1 class="anima-up-down">
                 Hello, my name is <br /><span style="color: #00c1ff"
                   >Danijel</span
                 >
                 <span style="color: #00c1ff">Doveden</span><br />
                 I am full-stack web developer.
-              </h1>
-              <p class="anima-down-up">
+              </h1> -->
+              <div class="star-wars-intro">
+                <!-- Blue Intro Text -->
+                <p class="intro-text">
+                  Hello, my name is Danijel Doveden. I am full-stack web
+                  developer.
+                </p>
+
+                <!-- Logo Image or Text goes in here -->
+                <h2 class="main-logo">
+                  <img src="img/rddesign-weis.png" />
+                </h2>
+
+                <!-- All Scrolling Content Goes in here -->
+                <div class="main-content">
+                  <div class="title-content">
+                    <p class="content-header">
+                      <span>Episode XIII</span><br />Portfolio
+                    </p>
+
+                    <br />
+
+                    <p class="content-body">
+                      I am Fullstack web developer with 5 years expirience in
+                      developing applications and websites. Love to learn and
+                      solve problems. I have passion for designig and developing
+                      intuitive and dynamic UI and API. Pragmatic, highly
+                      adaptive, industrious, organized, learn quick, open for
+                      new challenges. Love to learn and solve problems. Team
+                      player. Love science and philosophy.
+                    </p>
+
+                    <!-- button or link or whatever -->
+                    <a href="#portfolio" class="space-button">View my works!</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <p class="anima-down-up">
                 <a href="#portfolio"
                   >View my works<i class="fas fa-arrow-right"></i
                 ></a>
-              </p>
+              </p> -->
             </div>
           </div>
-        </section>
-        <section id="about">
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
           <h2>ABOUT</h2>
           <div class="row g-0 text-center info">
             <div class="col-6 col-lg-3">
@@ -102,10 +141,10 @@
               </p>
             </div>
           </div>
-          <div class="row g-0 text-center">
+          <div class="row g-0 text-center screen">
+            <h4>PERSONAL CARD</h4>
             <div class="col-lg-6">
               <div class="prof-hol">
-                <h2>PERSONAL CARD</h2>
                 <div class="generals">
                   <img src="img/zaprofil2.jpg" alt="sssss" />
                   <div class="details">
@@ -129,9 +168,9 @@
                 </div>
                 <div class="skill-tree">
                   <div class="mm-buttons">
-                    <span class="action-btn">Major</span>
-                    <h2>SKILLS</h2>
-                    <span class="action-btn">Minor</span>
+                    <h5 class="bio-nav">Major</h5>
+                    <span>SKILLS</span>
+                    <h5 class="bio-nav">Minor</h5>
                   </div>
                   <div class="row g-0 bulb-board">
                     <div class="skill-col col-4">
@@ -215,8 +254,8 @@
             <div class="col-lg-6">
               <div class="bio-hold">
                 <div class="bio">
-                  <h5>Bio</h5>
-                  <p class="text-justify">
+                  <h5 class="bio-nav">Bio</h5>
+                  <p>
                     Fullstack web developer with 5 years expirience in
                     developing applications and websites. Love to learn and
                     solve problems. I have passion for designig and developing
@@ -227,22 +266,28 @@
                   </p>
                 </div>
                 <div class="certif">
-                  <h5>Certificates</h5>
+                  <h5 class="bio-nav">Certificates</h5>
                   <p>Udemy - Frontend developer</p>
                   <p>Monday.com - developer</p>
                   <p>M-Files - developer</p>
                   <p>Robotic Process Automation - developer</p>
                 </div>
                 <div class="education">
-                  <h5>Education</h5>
-                  <p>2018 Java web Development, FTN informatika, N.Sad</p>
-                  <p>2011 Faculty of sport, University, N.Sad</p>
+                  <h5 class="bio-nav">Education</h5>
+                  <p class="text-start">
+                    2018 Java web Development, FTN informatika, N.Sad
+                  </p>
+                  <p class="text-start">
+                    2011 Faculty of sport, University, N.Sad
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section id="portfolio">
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="container">
           <h2>PORTFOLIO</h2>
           <div class="websites">
             <h3>Websites</h3>
@@ -523,7 +568,7 @@
               <div class="col-12 col-lg-4 monday-h">
                 <div class="project monday">
                   <span></span>
-                  <h5>8Monday.com app integration</h5>
+                  <h5>Monday.com app integration</h5>
                   <h6>Soluma, Slovenia</h6>
                   <p>
                     <span>Technologies:</span> HTML, CSS, JS, React, Monday.com
@@ -534,9 +579,11 @@
               </div>
             </div>
           </div>
-        </section>
-      </main>
-      <section id="contact">
+        </div>
+      </section>
+    </main>
+    <section id="contact">
+      <div class="container">
         <h2>CONTACT</h2>
         <p class="m-auto text-center mb-4">
           Do You have a question? Are You interested to work toghether? Send an
@@ -595,9 +642,8 @@
             </form>
           </div>
         </div>
-        <!--  container -->
-      </section>
-    </div>
+      </div>
+    </section>
     <footer>
       <div class="container">
         <div class="row g-0 flex-column text-center">

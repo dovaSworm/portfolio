@@ -36,8 +36,25 @@ $("#hero a").mouseleave(function () {
     $("i", this).removeClass("fa-arrow-down");
     $("i", this).addClass("fa-arrow-right");
 });
-
-$(".mm-buttons span.action-btn").mouseover(function () {
+$(".bio-nav").mouseover(function () {
+    if ($(this).html() === "Bio") {
+        $(".bio p").addClass("highlight");
+        $(".bio h5").addClass("highlight");
+    }
+    if ($(this).html() === "Certificates") {
+        $(".certif p").addClass("highlight");
+        $(".certif h5").addClass("highlight");
+    }
+    if ($(this).html() === "Education") {
+        $(".education p").addClass("highlight");
+        $(".education h5").addClass("highlight");
+    } $(this).mouseleave(() => {
+        $(".bio p, h5").removeClass("highlight");
+        $(".certif p, h5").removeClass("highlight");
+        $(".education p, h5").removeClass("highlight");
+    });
+});
+$(".bio-nav").mouseover(function () {
     if ($(this).text() === "Major") {
         $(".skill-col span.major span.bulb").addClass("bulb-on");
         $(".skill-col span.major").addClass("highlight");
@@ -49,7 +66,11 @@ $(".mm-buttons span.action-btn").mouseover(function () {
     $(this).mouseleave(() => {
         $(".skill-col span").removeClass("highlight");
         $(".skill-col span").removeClass("bulb-on");
+        $(".bio p, h5").removeClass("highlight");
+        $(".certif p, h5").removeClass("highlight");
+        $(".education p, h5").removeClass("highlight");
     });
+
 });
 
 $(window).on('scroll', () => {
