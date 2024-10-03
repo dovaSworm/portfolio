@@ -8,10 +8,13 @@ vendor.zip
 composer.json
 composer.lock
 css/style.scss
-css/_variables.scss
 css/style.css.map
+css/_variables.scss
 css/variable.css.map
 css/variable.css
+css/animations.scss
+css/animations.css.map
+css/animations.css
 reserve
 google7f6cacee84f67191.html
 _config.yml

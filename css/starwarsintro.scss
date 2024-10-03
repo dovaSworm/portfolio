@@ -1,12 +1,3 @@
-/*
-Name: StarWarsIntro.css
-URI: polarnotion.github.io/starwarsintro
-Author: Polar Notion
-Author URI: http://polarnotion.com/
-Description: A simple CSS library for creating a Star Wars Intro Crawl. May the Force be with you.
-Version: 1.0
-*/
-@import "variables";
 .star-wars-intro {
     /* background: url(/img/stars-bg.jpg) center center; */
     background: transparent;
@@ -38,7 +29,7 @@ Version: 1.0
     .title-content {
         position: absolute;
         top: 100%;
-        animation: scroll 120s linear 4s forwards;
+        animation: scroll 50s linear 4s forwards;
     }
     .main-content {
         margin-left: auto;
@@ -105,25 +96,6 @@ Version: 1.0
         }
     }
 }
-
-// .star-wars-intro .main-content:after {
-//     position: absolute;
-//     content: " ";
-//     top: 0;
-//     bottom: 60%;
-//     background-image: linear-gradient(top, rgba(0, 0, 0, 1) 0%, transparent 100%);
-//     pointer-events: none;
-// }
-
-// .star-wars-intro .space-button:active,
-// .star-wars-intro .space-button:focus {
-//     // border: 8px solid rgb(72, 217, 253);
-//     background: rgba(227, 245, 252, 0.97);
-//     box-shadow: 0 0 40px 4px rgb(112, 216, 241);
-//     color: black;
-// }
-
-/* Main Image Styles */
 
 @-webkit-keyframes intro {
     0% {
@@ -271,6 +243,6 @@ Version: 1.0
     .star-wars-intro .title-content {
         position: absolute;
         top: 100%;
-        animation: scroll 100s linear 4s forwards;
+        animation: scroll 50s linear 4s forwards;
     }
 }

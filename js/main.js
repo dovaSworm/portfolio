@@ -73,14 +73,27 @@ $(".bio-nav").mouseover(function () {
 
 });
 
+function dodajAnimu() {
+    var about = document.getElementById("about-title").getBoundingClientRect().top;
+    console.log(about, wh / 2);
+    if (about < wh / 2) {
+        $("#about h2").addClass('smallin');
+    }
+}
+
 $(window).on('scroll', () => {
-    var hero = document.getElementById("hero").getBoundingClientRect().top;
-    var about = document.getElementById("about").getBoundingClientRect().top;
+    dodajAnimu();
+    // var hero = document.getElementById("hero").getBoundingClientRect().top;
+    // var about = $("#about h2").offset().top;
+    // console.log(about, wh / 2);
+    // var about = document.getElementById("about-title").getBoundingClientRect().top;
 
     var portfolio = document.getElementById("portfolio").getBoundingClientRect().top;
 
     var contact = document.getElementById("contact").getBoundingClientRect().top;
-
+    // if (about < wh / 2) {
+    //     $("#about h2").addClass('smallin');
+    // }
 
     if (hero + 800 < window.scrollY) {
         navbar.addClass('show');

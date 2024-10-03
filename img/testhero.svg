@@ -1,270 +1,348 @@
-<svg id="Layer_1" data-name="Layer 1"
-	xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1080">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1080">
 	<defs>
 		<style>
 			.cls-1 {
-			  fill: #030512;
+				fill: #030512;
 			}
-	  
+
 			.cls-2 {
-			  fill: #00c1ff;
-			} 
-	  
-			.cls-2, .cls-3, .cls-4 {
-			  fill-opacity: 0.83;
+				fill: #00c1ff;
 			}
-		
-			.cls-3 {
-			  fill: #ca96ff;
-			}
-	  
+
+			.cls-2,
+			.cls-3,
 			.cls-4 {
-			  fill: #f3fb77;
+				fill-opacity: 0.83;
 			}
+
+			.cls-3 {
+				fill: #ca96ff;
+			}
+
+			.cls-4 {
+				fill: #f3fb77;
+			}
+
 			.cls-5 {
-			  fill: #FFFFFF;
+				fill: #FFFFFF;
 			}
-			.cls-6 { fill-opacity: 0.83;
-			  fill: #4156cf;
-			}  
-			.cls-7 { fill-opacity: 0.83;
-			  fill: #530fea;
+
+			.cls-6 {
+				fill-opacity: 0.83;
+				fill: #4156cf;
 			}
-			.cls-8 { fill-opacity: 0.4;
-			  fill: #34d379;
+
+			.cls-7 {
+				fill-opacity: 0.83;
+				fill: #530fea;
 			}
-			.cls-9 { fill-opacity: 0.3;
-			  fill: #ff0047;
-			} 
-            
-@keyframes comet {
-    from {
-		r:43;
-    }
-    to {
-		cx:790.89;
-		cy:-5.55;
-        r:0
-    }
-}
-@keyframes comet2 {
-    from {
-		r:1;
 
-    }
-    to {
-		cx:-0.89;
-		cy:455.55;
-        r:0
-    }
-}
-@keyframes comet3 {
-    from {
-		r:10;
+			.cls-8 {
+				fill-opacity: 0.4;
+				fill: #34d379;
+			}
 
-    }
-    to {
-		cx:-5.89;
-		cy:895.55;
-        r:0
-    }
-}
-@keyframes mojaAnima {
-    from {
-		
-        opacity: 1;
-       
-    }
-    to {
-		r:0;
-        opacity: 0;
-        
-    }
-}
-@keyframes mojaAnima2 {
-    from {
-																																																																																																																																																																																																																																																					<!-- r:7.9; -->
-        opacity: 1;
-        																																																																																																																																																																																																																																																			<!-- cy: 439;
-        cx: 867; -->
-    }
-    to {
-		r:0;
-        opacity: 0;
-        																																																																																																																																																																																																																																																			<!-- cy: 1439;
-        cx: 1867; -->
-    }
-}
-@keyframes mojaAnima3 {
-    from {
-																																																																																																																																																																																																																																																					<!-- r:7.9; -->
-        opacity: 1;
-        cx:1490.89;
-		cy:905.55;
-    }
-    to {
-		r:0.75;
-        opacity: 0;
-        cy: -5;
-        cx: 567;
-    }
-}
-@keyframes mojaAnima4 {
-    from {
-		r:1.7;
-        opacity: 1;
-        cx:-4;
-		cy:-3;
-    }
-    to {
-		r:.89;
-        opacity: 0;
-        cy: 960;
-        cx: 962;
-    }
-}
-.comet {
-    animation-duration: 3.5s;
-    animation-name: comet;
-    animation-iteration-count: 1;
-}
-.comet2 {
-    animation-duration: 4.5s;
-    animation-name: comet2;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-.test1 {
-    animation-duration: 2.5s;
-    animation-name: mojaAnima;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
+			.cls-9 {
+				fill-opacity: 0.3;
+				fill: #ff0047;
+			}
 
-.test2 {
-    animation-duration: 3.5s;
-    /* animation-delay: 1s; */
-    animation-name: mojaAnima;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
+			@keyframes comet {
+				from {
+					r: 9;
+				}
 
-.test3 {
-    animation-duration: 4.5s;
-    																																																																																																																																																																																																																																																			<!-- animation-delay: 1s; -->
-    animation-name: mojaAnima;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
+				to {
+					cx: 390.89;
+					cy: 1045.55;
+					r: 0
+				}
+			}
 
-.test4 {
-    animation-duration: 2.8s;
-    																																																																																																																																																																																																																																																			<!-- animation-delay: 1.6s; -->
-    animation-name: mojaAnima2;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-.comet3 {
-    animation-duration: 9.8s;
-    																																																																																																																																																																																																																																																			<!-- animation-delay: 1.6s; -->
-    animation-name: comet3;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-}
-.comet4 {
-    animation-duration: 9.8s;
-    animation-delay: 1.6s;
-    animation-name: mojaAnima4;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-}
+			@keyframes comet1 {
+				from {
+					r: 4;
+					cx: 989.89;
+					cy: -15.55;
+				}
+
+				to {
+					cx: 190.89;
+					cy: 1345.55;
+					r: 0;
+				}
+			}
+
+			@keyframes comet2 {
+				from {
+					r: 2;
+					cx: 1789.89;
+					cy: 155.55;
+
+				}
+
+				to {
+					cx: -120.89;
+					cy: 755.55;
+					r: 6;
+				}
+			}
+
+			@keyframes fade {
+				from {
+					opacity: 1;
+				}
+
+				to {
+					r: 3;
+					opacity: 0;
+
+				}
+			}
+
+			.test1 {
+				animation-duration: 2.5s;
+				animation-name: fade;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+
+			.test2 {
+				animation-duration: 3.5s;
+				/* animation-delay: 1s; */
+				animation-name: fade;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+
+			.test3 {
+				animation-duration: 4.5s;
+				animation-delay: 1s;
+				animation-name: fade;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+
+			@keyframes fade-lx {
+				from {
+					opacity: 1;
+				}
+
+				to {
+					r: 4;
+					opacity: 0;
+				}
+			}
+
+			.test4 {
+				animation-duration: 4.8s;
+				animation-delay: 1.6s;
+				animation-name: fade-lx;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+
+			.comet {
+				animation-duration: 3.5s;
+				animation-name: comet;
+				animation-iteration-count: infinite;
+			}
+
+			.comet1 {
+				animation-duration: 4.5s;
+				animation-name: comet1;
+				animation-iteration-count: infinite;
+			}
+
+			.comet2 {
+				animation-duration: 4.1s;
+				animation-name: comet2;
+				animation-iteration-count: infinite;
+				animation-direction: normal;
+			}
+
+			.comet3 {
+				animation-duration: 2.8s;
+				animation-delay: 2.6s;
+				animation-name: comet3;
+				animation-iteration-count: infinite;
+				animation-direction: normal;
+			}
+
+			@keyframes comet3 {
+				from {
+					r: 5;
+					cy: 60;
+					cx: 29;
+				}
+
+				to {
+					r: 0.89;
+					cy: 1960;
+					cx: 2962;
+				}
+			}
+
+			.comet4 {
+				animation-duration: 4.8s;
+				animation-delay: 1.16s;
+				animation-name: comet4;
+				animation-iteration-count: infinite;
+				animation-direction: normal;
+			}
+
+			@keyframes comet4 {
+				from {
+					/* r: 1.7; */
+					opacity: 1;
+					cx: -4;
+					cy: -3;
+				}
+
+				to {
+					r: 7;
+					opacity: 0;
+					cy: 560;
+					cx: 2262;
+				}
+			}
+
+			.comet5 {
+				animation-duration: 3.8s;
+				animation-delay: 0.6s;
+				animation-name: comet5;
+				animation-iteration-count: infinite;
+				animation-direction: normal;
+			}
+
+			@keyframes comet5 {
+				from {
+					r: 5;
+					cx: -14;
+					cy: 356;
+				}
+
+				to {
+					r: 0.59;
+					cy: 660;
+					cx: 2362;
+				}
+			}
+
+			.comet6 {
+				animation-duration: 2.6s;
+				animation-name: comet6;
+				animation-iteration-count: infinite;
+				animation-direction: normal;
+			}
+
+			@keyframes comet6 {
+				from {
+					opacity: 1;
+					r: 7;
+				}
+
+				to {
+					r: 0.89;
+					opacity: 0;
+					cy: 1960;
+					cx: 2962;
+				}
+			}
 		</style>
 	</defs>
 	<title>hirounovimoj</title>
 	<rect class="cls-1" width="1800" height="1080"></rect>
-	<circle class="cls-5 " r="1.78"></circle>
+	<circle class="cls-3 comet" r="1.78"></circle>
 	<circle class="cls-4 comet4" r="1.56"></circle>
 
-	<circle transform="translate(224 178)" class="cls-5 trans " cx="1290.89" cy="705.55" r="1.88"></circle>
-	<circle transform="translate(224 178)" class="cls-5 trans " cx="995.89" cy="895.55" r="2.88"></circle>
+	<circle class="cls-7 comet1" r="2.56"></circle>
+	<circle class="cls-9 comet2" r="1.56"></circle>
+	<circle class="cls-8 comet3" r="1.56"></circle>
+	<circle class="cls-5 comet4" r="1.56"></circle>
+	<circle class="cls-6 comet5" r="1.56"></circle>
+	<circle class="cls-2 comet6" r="1.56"></circle>
+
+	<circle transform="translate(224 178)" class="cls-5 trans test1" cx="1290.89" cy="705.55" r="1.88"></circle>
+	<circle transform="translate(224 178)" class="cls-5 trans test3" cx="995.89" cy="895.55" r="2.88"></circle>
 	<circle transform="translate(224 178)" class="cls-5 trans " cx="950.89" cy="667.55" r="2.88"></circle>
-	<circle transform="translate(24 178)" class="cls-5 trans " cx="1120.89" cy="565.55" r="2.48"></circle>
+	<circle transform="translate(24 178)" class="cls-5 trans test3" cx="1120.89" cy="565.55" r="2.48"></circle>
 	<circle transform="translate(224 178)" class="cls-5 trans" cx="430.89" cy="845.55" r="1.9"></circle>
 	<circle transform="translate(224 178)" class="cls-5 trans test1" cx="1390.89" cy="915.55" r="3.08"></circle>
-	<circle transform="translate(24 178)" class="cls-9 trans " cx="3590.89" cy="775.55" r="2.78"></circle>
-	<circle transform="translate(224 178)" class="cls-9 trans " cx="3290.89" cy="667.55" r="1.88"></circle>
+	<circle transform="translate(24 178)" class="cls-9 trans" cx="1490.89" cy="75.55" r="2.78"></circle>
+	<circle transform="translate(224 178)" class="cls-9 trans test2" cx="3290.89" cy="667.55" r="1.88"></circle>
 	<circle transform="translate(224 178)" class="cls-9 trans test4" cx="340.89" cy="185.55" r="2.4"></circle>
 	<circle transform="translate(224 178)" class="cls-9 trans " cx="440.89" cy="705.55" r="2.2"></circle>
-	<circle transform="translate(224 178)" class="cls-9 trans " cx="630.89" cy="905.55" r="1.58"></circle>
-	<circle transform="translate(123 45)" class="cls-9 trans " cx="790.89" cy="745.55" r="2.68"></circle>
+	<circle transform="translate(224 178)" class="cls-9 trans test2" cx="630.89" cy="905.55" r="1.58"></circle>
+	<circle transform="translate(123 45)" class="cls-9 trans test1" cx="790.89" cy="745.55" r="2.68"></circle>
 	<circle transform="translate(123 45)" class="cls-9 trans" cx="30.89" cy="167.55" r="2.88"></circle>
 	<circle transform="translate(123 45)" class="cls-9 trans" cx="1396.89" cy="835.55" r="2.48"></circle>
 	<circle transform="translate(123 45)" class="cls-6 trans" cx="70.89" cy="895.55" r="3.1"></circle>
 	<circle transform="translate(123 45)" class="cls-6 trans test1" cx="390.89" cy="145.55" r="1.548"></circle>
-	<circle transform="translate(224 45)" class="cls-6 trans " cx="351.89" cy="615.55" r="2.378"></circle>
-	<circle transform="translate(224 45)" class="cls-6 trans " cx="830.89" cy="167.55" r="1.488"></circle>
+	<circle transform="translate(224 45)" class="cls-6 trans test3" cx="351.89" cy="615.55" r="2.378"></circle>
+	<circle transform="translate(224 45)" class="cls-6 trans test3" cx="830.89" cy="167.55" r="1.488"></circle>
 	<circle transform="translate(224 178)" class="cls-6 trans test4" cx="3340.89" cy="175.55" r="3.9"></circle>
-	<circle transform="translate(224 178)" class="cls-9 trans " cx="1750.89" cy="105.55" r="2.2"></circle>
-	<circle transform="translate(56 178)" class="cls-9 trans comet2" cx="350.89" cy="867.55" r="2.088"></circle>
+	<circle transform="translate(224 178)" class="cls-9 trans" cx="150.89" cy="105.55" r="2.2"></circle>
+	<circle transform="translate(56 178)" class="cls-9 trans " cx="350.89" cy="867.55" r="2.088"></circle>
 	<circle transform="translate(56 178)" class="cls-9 trans" cx="1412.89" cy="135.55" r="2.48"></circle>
 	<circle transform="translate(56 178)" class="cls-9 trans" cx="1373.89" cy="395.55" r="1.61"></circle>
 	<circle transform="translate(56 178)" class="cls-9 trans test1" cx="390.89" cy="245.55" r="1.98"></circle>
-	<circle transform="translate(56 23)" class="cls-9 trans " cx="1451.89" cy="745.55" r="2.78"></circle>
+	<circle transform="translate(56 23)" class="cls-9 trans test3" cx="1451.89" cy="745.55" r="2.78"></circle>
 	<circle transform="translate(56 23)" class="cls-9 trans " cx="17390.89" cy="167.55" r="1.88"></circle>
 	<circle transform="translate(56 23)" class="cls-9 trans test4" cx="3356.89" cy="187.55" r="2.49"></circle>
-	<circle transform="translate(224 23)" class="cls-9 trans " cx="1556.89" cy="645.55" r="2.2"></circle>
+	<circle transform="translate(224 23)" class="cls-9 trans test2" cx="1556.89" cy="645.55" r="2.2"></circle>
 
 
-	<circle transform="translate(224 23)" class="cls-5 trans " cx="290.89" cy="105.55" r="3.88"></circle>
+	<circle transform="translate(224 23)" class="cls-5 trans test1" cx="290.89" cy="105.55" r="3.88"></circle>
 	<circle transform="translate(78 23)" class="cls-5 trans " cx="395.89" cy="595.55" r="1.88"></circle>
-	<circle transform="translate(78 23)" class="cls-5 trans " cx="350.89" cy="667.55" r="2.88"></circle>
-	<circle transform="translate(78 178)" class="cls-5 trans " cx="890.89" cy="185.55" r="2.48"></circle>
+	<circle transform="translate(78 23)" class="cls-5 trans test2" cx="350.89" cy="667.55" r="2.88"></circle>
+	<circle transform="translate(78 178)" class="cls-5 trans test2" cx="890.89" cy="185.55" r="2.48"></circle>
 	<circle transform="translate(78 178)" class="cls-5 trans" cx="430.89" cy="145.55" r="1.1"></circle>
 	<circle transform="translate(78 178)" class="cls-5 trans test1" cx="1390.89" cy="145.55" r="1.08"></circle>
 	<circle transform="translate(78 178)" class="cls-5 trans " cx="3590.89" cy="495.55" r="2.78"></circle>
-	<circle transform="translate(46 178)" class="cls-5 trans " cx="3290.89" cy="167.55" r="1.88"></circle>
+	<circle transform="translate(46 178)" class="cls-5 trans test3" cx="3290.89" cy="167.55" r="1.88"></circle>
 	<circle transform="translate(46 178)" class="cls-6 trans test4" cx="340.89" cy="185.55" r="1.9"></circle>
-	<circle transform="translate(46 90)" class="cls-6 trans " cx="440.89" cy="705.55" r="2.2"></circle>
-	<circle transform="translate(46 90)" class="cls-6 trans " cx="630.89" cy="105.55" r="1.88"></circle>
-	<circle transform="translate(46 90)" class="cls-6 trans " cx="790.89" cy="145.55" r="1.88"></circle>
-	<circle transform="translate(46 90)" class="cls-6 trans comet2" cx="30.89" cy="167.55" r="2.88"></circle>
+	<circle transform="translate(46 90)" class="cls-6 trans test3" cx="440.89" cy="705.55" r="2.2"></circle>
+	<circle transform="translate(46 90)" class="cls-6 trans test3" cx="630.89" cy="105.55" r="1.88"></circle>
+	<circle transform="translate(46 90)" class="cls-6 trans test3" cx="790.89" cy="145.55" r="1.88"></circle>
+	<circle transform="translate(46 90)" class="cls-6 trans " cx="30.89" cy="167.55" r="2.88"></circle>
 	<circle transform="translate(46 90)" class="cls-6 trans" cx="1396.89" cy="135.55" r="2.48"></circle>
 	<circle transform="translate(224 178)" class="cls-6 trans" cx="70.89" cy="195.55" r="1.1"></circle>
 	<circle transform="translate(224 178)" class="cls-6 trans test1" cx="390.89" cy="145.55" r="2.08"></circle>
-	<circle transform="translate(224 178)" class="cls-6 trans " cx="351.89" cy="15.55" r="2.78"></circle>
-	<circle transform="translate(224 178)" class="cls-8 trans " cx="830.89" cy="167.55" r="1.88"></circle>
+	<circle transform="translate(224 178)" class="cls-6 trans test3" cx="351.89" cy="15.55" r="2.78"></circle>
+	<circle transform="translate(224 178)" class="cls-8 trans test2" cx="830.89" cy="167.55" r="1.88"></circle>
 	<circle transform="translate(224 178)" class="cls-8 trans test4" cx="3340.89" cy="175.55" r="1.9"></circle>
 	<circle transform="translate(224 178)" class="cls-8 trans " cx="350.89" cy="105.55" r="2.2"></circle>
-	<circle transform="translate(224 178)" class="cls-8 trans " cx="30.89" cy="167.55" r="2.88"></circle>
+	<circle transform="translate(224 178)" class="cls-8 trans test1" cx="30.89" cy="167.55" r="2.88"></circle>
 	<circle transform="translate(224 178)" class="cls-8 trans" cx="312.89" cy="135.55" r="2.48"></circle>
 	<circle transform="translate(224 178)" class="cls-8 trans" cx="373.89" cy="395.55" r="3.1"></circle>
 	<circle transform="translate(224 178)" class="cls-8 trans test1" cx="390.89" cy="245.55" r="2.08"></circle>
-	<circle transform="translate(224 178)" class="cls-8 trans " cx="351.89" cy="745.55" r="2.78"></circle>
-	<circle transform="translate(224 178)" class="cls-8 trans " cx="390.89" cy="167.55" r="1.88"></circle>
+	<circle transform="translate(224 178)" class="cls-8 trans test3" cx="351.89" cy="745.55" r="2.78"></circle>
+	<circle transform="translate(224 178)" class="cls-8 trans" cx="390.89" cy="167.55" r="1.88"></circle>
 	<circle transform="translate(224 178)" class="cls-8 trans test4" cx="3356.89" cy="187.55" r="2.9"></circle>
 	<circle transform="translate(224 178)" class="cls-8 trans " cx="356.89" cy="645.55" r="2.2"></circle>
 
 
-	<circle transform="translate(224 178)" class="cls-5 trans " cx="1490.89" cy="1405.55" r="3.88"></circle>
-	<circle transform="translate(224 178)" class="cls-5 trans " cx="790.89" cy="795.55" r="1.88"></circle>
-	<circle transform="translate(224 178)" class="cls-5 trans " cx="450.89" cy="767.55" r="2.88"></circle>
+	<circle transform="translate(224 178)" class="cls-5 trans" cx="1490.89" cy="1405.55" r="3.88"></circle>
+	<circle transform="translate(224 178)" class="cls-5 trans test2" cx="790.89" cy="795.55" r="1.88"></circle>
+	<circle transform="translate(224 178)" class="cls-5 trans test1" cx="450.89" cy="767.55" r="2.88"></circle>
 	<circle transform="translate(224 178)" class="cls-5 trans " cx="1690.89" cy="885.55" r="2.48"></circle>
 	<circle transform="translate(224 178)" class="cls-5 trans" cx="1230.89" cy="445.55" r="2.1"></circle>
 	<circle transform="translate(224 178)" class="cls-5 trans test1" cx="490.89" cy="245.55" r="2.08"></circle>
 	<circle transform="translate(224 178)" class="cls-5 trans " cx="1590.89" cy="995.55" r="2.78"></circle>
-	<circle transform="translate(45 98)" class="cls-5 trans " cx="1290.89" cy="267.55" r="1.88"></circle>
+	<circle transform="translate(45 98)" class="cls-5 trans" cx="1290.89" cy="267.55" r="1.88"></circle>
 	<circle transform="translate(45 98)" class="cls-5 trans test4" cx="340.89" cy="785.55" r="1.9"></circle>
-	<circle transform="translate(45 98)" class="cls-5 trans " cx="840.89" cy="605.55" r="2.2"></circle>
-	<circle transform="translate(45 98)" class="cls-7 trans " cx="530.89" cy="305.55" r="1.88"></circle>
-	<circle transform="translate(45 98)" class="cls-7 trans comet" cx="890.89" cy="645.55" r="2.88"></circle>
-	<circle transform="translate(45 98)" class="cls-7 trans " cx="50.89" cy="367.55" r="2.88"></circle>
+	<circle transform="translate(45 98)" class="cls-5 trans test3" cx="840.89" cy="605.55" r="2.2"></circle>
+	<circle transform="translate(45 98)" class="cls-7 trans" cx="530.89" cy="305.55" r="1.88"></circle>
+	<circle transform="translate(45 98)" class="cls-7 trans" cx="890.89" cy="645.55" r="2.88"></circle>
+	<circle transform="translate(45 98)" class="cls-7 trans test3" cx="50.89" cy="367.55" r="2.88"></circle>
 	<circle transform="translate(45 98)" class="cls-7 trans" cx="1396.89" cy="435.55" r="2.48"></circle>
 	<circle transform="translate(45 98)" class="cls-7 trans" cx="870.89" cy="195.55" r="1.1"></circle>
 	<circle transform="translate(45 98)" class="cls-7 trans test1" cx="990.89" cy="845.55" r="1.08"></circle>
-	<circle transform="translate(45 98)" class="cls-7 trans " cx="251.89" cy="45.55" r="2.78"></circle>
+	<circle transform="translate(45 98)" class="cls-7 trans test3" cx="251.89" cy="45.55" r="2.78"></circle>
 	<circle transform="translate(224 178)" class="cls-7 trans " cx="90.89" cy="767.55" r="1.88"></circle>
 	<circle transform="translate(224 178)" class="cls-7 trans test4" cx="1340.89" cy="875.55" r="2.9"></circle>
-	<circle transform="translate(224 178)" class="cls-7 trans " cx="350.89" cy="405.55" r="2.2"></circle>
+	<circle transform="translate(224 178)" class="cls-7 trans test3" cx="350.89" cy="405.55" r="2.2"></circle>
 	<circle transform="translate(224 178)" class="cls-7 trans " cx="50.89" cy="367.55" r="2.88"></circle>
 	<circle transform="translate(224 178)" class="cls-7 trans" cx="496.89" cy="6435.55" r="2.48"></circle>
 	<circle transform="translate(224 178)" class="cls-7 trans" cx="570.89" cy="395.55" r="3.1"></circle>
@@ -274,27 +352,27 @@
 	<circle transform="translate(224 178)" class="cls-7 trans test4" cx="1356.89" cy="887.55" r="1.9"></circle>
 	<circle transform="translate(224 178)" class="cls-7 trans " cx="356.89" cy="445.55" r="2.2"></circle>
 
-	<circle class="cls-9 " cx="1290.89" cy="705.55" r="1.88"></circle>
+	<circle class="cls-9 test1" cx="1290.89" cy="705.55" r="1.88"></circle>
 	<circle class="cls-9 " cx="995.89" cy="895.55" r="2.88"></circle>
-	<circle class="cls-9 " cx="950.89" cy="667.55" r="2.88"></circle>
-	<circle class="cls-9 " cx="1120.89" cy="565.55" r="2.48"></circle>
+	<circle class="cls-9 test3" cx="950.89" cy="667.55" r="2.88"></circle>
+	<circle class="cls-9 test3" cx="1120.89" cy="565.55" r="2.48"></circle>
 	<circle class="cls-9" cx="430.89" cy="845.55" r="1.9"></circle>
 	<circle class="cls-9 test1" cx="1390.89" cy="915.55" r="3.08"></circle>
 	<circle class="cls-9 " cx="3590.89" cy="775.55" r="2.78"></circle>
-	<circle class="cls-9 " cx="3290.89" cy="667.55" r="1.88"></circle>
+	<circle class="cls-9 test2" cx="3290.89" cy="667.55" r="1.88"></circle>
 	<circle class="cls-9 test4" cx="340.89" cy="185.55" r="2.4"></circle>
 	<circle class="cls-9 " cx="440.89" cy="705.55" r="2.2"></circle>
-	<circle class="cls-9 " cx="630.89" cy="905.55" r="1.58"></circle>
+	<circle class="cls-9 test2" cx="630.89" cy="905.55" r="1.58"></circle>
 	<circle class="cls-9 " cx="790.89" cy="745.55" r="2.68"></circle>
-	<circle class="cls-9 comet3" cx="30.89" cy="167.55" r="2.88"></circle>
+	<circle class="cls-9" cx="30.89" cy="167.55" r="2.88"></circle>
 	<circle class="cls-9" cx="1396.89" cy="835.55" r="2.48"></circle>
 	<circle class="cls-9" cx="70.89" cy="895.55" r="3.1"></circle>
 	<circle class="cls-9 test1" cx="390.89" cy="145.55" r="1.548"></circle>
-	<circle class="cls-9 " cx="351.89" cy="615.55" r="2.378"></circle>
+	<circle class="cls-9 test3" cx="351.89" cy="615.55" r="2.378"></circle>
 	<circle class="cls-9 " cx="830.89" cy="167.55" r="1.488"></circle>
 	<circle class="cls-9 test4" cx="3340.89" cy="175.55" r="3.9"></circle>
 	<circle class="cls-9 " cx="1750.89" cy="105.55" r="2.2"></circle>
-	<circle class="cls-9 comet3" cx="350.89" cy="867.55" r="2.088"></circle>
+	<circle class="cls-9" cx="350.89" cy="867.55" r="2.088"></circle>
 	<circle class="cls-9" cx="1412.89" cy="135.55" r="2.48"></circle>
 	<circle class="cls-9" cx="1373.89" cy="395.55" r="1.61"></circle>
 	<circle class="cls-9 test1" cx="390.89" cy="245.55" r="1.98"></circle>
@@ -303,20 +381,19 @@
 	<circle class="cls-9 test4" cx="3356.89" cy="187.55" r="2.49"></circle>
 	<circle class="cls-9 " cx="1556.89" cy="645.55" r="2.2"></circle>
 
-
-	<circle class="cls-8 " cx="290.89" cy="105.55" r="3.88"></circle>
-	<circle class="cls-8 " cx="395.89" cy="595.55" r="1.88"></circle>
-	<circle class="cls-8 test6" cx="350.89" cy="667.55" r="2.88"></circle>
-	<circle class="cls-8 " cx="890.89" cy="185.55" r="2.48"></circle>
+	<circle class="cls-8 test2" cx="290.89" cy="105.55" r="3.88"></circle>
+	<circle class="cls-8 test2" cx="395.89" cy="595.55" r="1.88"></circle>
+	<circle class="cls-8" cx="350.89" cy="667.55" r="2.88"></circle>
+	<circle class="cls-8 test2" cx="890.89" cy="185.55" r="2.48"></circle>
 	<circle class="cls-8" cx="430.89" cy="145.55" r="1.1"></circle>
 	<circle class="cls-8 test1" cx="1390.89" cy="145.55" r="1.08"></circle>
-	<circle class="cls-8 " cx="3590.89" cy="495.55" r="2.78"></circle>
+	<circle class="cls-8 test2" cx="3590.89" cy="495.55" r="2.78"></circle>
 	<circle class="cls-8 " cx="3290.89" cy="167.55" r="1.88"></circle>
 	<circle class="cls-8 test4" cx="340.89" cy="185.55" r="1.9"></circle>
-	<circle class="cls-8 " cx="440.89" cy="705.55" r="2.2"></circle>
-	<circle class="cls-8 comet2" cx="630.89" cy="105.55" r="1.88"></circle>
-	<circle class="cls-8 " cx="790.89" cy="145.55" r="1.88"></circle>
-	<circle class="cls-8 comet3" cx="30.89" cy="167.55" r="2.88"></circle>
+	<circle class="cls-8 test3" cx="440.89" cy="705.55" r="2.2"></circle>
+	<circle class="cls-8 " cx="630.89" cy="105.55" r="1.88"></circle>
+	<circle class="cls-8 test3" cx="790.89" cy="145.55" r="1.88"></circle>
+	<circle class="cls-8" cx="30.89" cy="167.55" r="2.88"></circle>
 	<circle class="cls-8" cx="1396.89" cy="135.55" r="2.48"></circle>
 	<circle class="cls-8" cx="70.89" cy="195.55" r="1.1"></circle>
 	<circle class="cls-8 test1" cx="390.89" cy="145.55" r="2.08"></circle>
@@ -324,37 +401,36 @@
 	<circle class="cls-8 " cx="830.89" cy="167.55" r="1.88"></circle>
 	<circle class="cls-8 test4" cx="3340.89" cy="175.55" r="1.9"></circle>
 	<circle class="cls-8 " cx="350.89" cy="105.55" r="2.2"></circle>
-	<circle class="cls-8 comet3" cx="30.89" cy="167.55" r="2.88"></circle>
+	<circle class="cls-8" cx="30.89" cy="167.55" r="2.88"></circle>
 	<circle class="cls-8" cx="312.89" cy="135.55" r="2.48"></circle>
 	<circle class="cls-8" cx="373.89" cy="395.55" r="3.1"></circle>
 	<circle class="cls-8 test1" cx="390.89" cy="245.55" r="2.08"></circle>
-	<circle class="cls-8 " cx="351.89" cy="745.55" r="2.78"></circle>
+	<circle class="cls-8 test3" cx="351.89" cy="745.55" r="2.78"></circle>
 	<circle class="cls-8 " cx="390.89" cy="167.55" r="1.88"></circle>
 	<circle class="cls-8 test4" cx="3356.89" cy="187.55" r="2.9"></circle>
 	<circle class="cls-8 " cx="356.89" cy="645.55" r="2.2"></circle>
 
-
 	<circle class="cls-7 " cx="1490.89" cy="1405.55" r="3.88"></circle>
 	<circle class="cls-7 " cx="790.89" cy="795.55" r="1.88"></circle>
-	<circle class="cls-7 test6" cx="450.89" cy="767.55" r="2.88"></circle>
+	<circle class="cls-7" cx="450.89" cy="767.55" r="2.88"></circle>
 	<circle class="cls-7 " cx="1690.89" cy="885.55" r="2.48"></circle>
 	<circle class="cls-7" cx="1230.89" cy="445.55" r="2.1"></circle>
 	<circle class="cls-7 test1" cx="490.89" cy="245.55" r="2.08"></circle>
-	<circle class="cls-7 " cx="1590.89" cy="995.55" r="2.78"></circle>
+	<circle class="cls-7 test3" cx="1590.89" cy="995.55" r="2.78"></circle>
 	<circle class="cls-7 " cx="1290.89" cy="267.55" r="1.88"></circle>
 	<circle class="cls-7 test4" cx="340.89" cy="785.55" r="1.9"></circle>
 	<circle class="cls-7 " cx="840.89" cy="605.55" r="2.2"></circle>
 	<circle class="cls-7 " cx="530.89" cy="305.55" r="1.88"></circle>
 	<circle class="cls-7 " cx="890.89" cy="645.55" r="2.88"></circle>
-	<circle class="cls-7 comet3" cx="50.89" cy="367.55" r="2.88"></circle>
+	<circle class="cls-7" cx="50.89" cy="367.55" r="2.88"></circle>
 	<circle class="cls-7" cx="1396.89" cy="435.55" r="2.48"></circle>
 	<circle class="cls-7" cx="870.89" cy="195.55" r="1.1"></circle>
 	<circle class="cls-7 test1" cx="990.89" cy="845.55" r="1.08"></circle>
-	<circle class="cls-7 " cx="251.89" cy="45.55" r="2.78"></circle>
+	<circle class="cls-7 test3" cx="251.89" cy="45.55" r="2.78"></circle>
 	<circle class="cls-7 " cx="90.89" cy="767.55" r="1.88"></circle>
 	<circle class="cls-7 test4" cx="1340.89" cy="875.55" r="2.9"></circle>
 	<circle class="cls-7 " cx="350.89" cy="405.55" r="2.2"></circle>
-	<circle class="cls-7 comet3" cx="50.89" cy="367.55" r="2.88"></circle>
+	<circle class="cls-7" cx="50.89" cy="367.55" r="2.88"></circle>
 	<circle class="cls-7" cx="496.89" cy="6435.55" r="2.48"></circle>
 	<circle class="cls-7" cx="570.89" cy="395.55" r="3.1"></circle>
 	<circle class="cls-7 test1" cx="690.89" cy="645.55" r="1.08"></circle>
@@ -364,7 +440,7 @@
 	<circle class="cls-7 " cx="356.89" cy="445.55" r="2.2"></circle>
 
 
-	<circle transform="translate(224 178)" class="cls-6 trans test6" cx="1490.89" cy="1405.55" r="3.88"></circle>
+	<circle transform="translate(224 178)" class="cls-6 trans" cx="1490.89" cy="205.55" r="3.88"></circle>
 	<circle transform="translate(224 178)" class="cls-6 trans" cx="790.89" cy="795.55" r="1.88"></circle>
 	<circle transform="translate(224 178)" class="cls-6 trans" cx="450.89" cy="767.55" r="2.88"></circle>
 	<circle transform="translate(224 178)" class="cls-6 trans" cx="1690.89" cy="885.55" r="2.48"></circle>
@@ -376,7 +452,7 @@
 	<circle transform="translate(224 178)" class="cls-6 trans " cx="840.89" cy="605.55" r="2.2"></circle>
 	<circle transform="translate(224 178)" class="cls-6 trans" cx="530.89" cy="305.55" r="1.88"></circle>
 	<circle transform="translate(224 178)" class="cls-6 trans" cx="890.89" cy="645.55" r="2.88"></circle>
-	<circle class="cls-5 comet3" cx="50.89" cy="367.55" r="2.88"></circle>
+	<circle class="cls-5" cx="50.89" cy="367.55" r="2.88"></circle>
 	<circle class="cls-5" cx="1396.89" cy="435.55" r="2.48"></circle>
 	<circle class="cls-5" cx="870.89" cy="195.55" r="1.1"></circle>
 	<circle class="cls-5 test1" cx="990.89" cy="845.55" r="1.08"></circle>
@@ -384,9 +460,9 @@
 	<circle class="cls-5 " cx="90.89" cy="767.55" r="1.88"></circle>
 	<circle class="cls-5 test4" cx="1340.89" cy="875.55" r="2.9"></circle>
 	<circle class="cls-5 " cx="350.89" cy="405.55" r="2.2"></circle>
-	<circle class="cls-5 comet3" cx="50.89" cy="367.55" r="2.88"></circle>
+	<circle class="cls-5" cx="50.89" cy="367.55" r="2.88"></circle>
 	<circle class="cls-5" cx="496.89" cy="6435.55" r="2.48"></circle>
-	<circle transform="translate(224 178)" class="cls-6 trans comet2" cx="570.89" cy="395.55" r="3.1"></circle>
+	<circle transform="translate(224 178)" class="cls-6 trans " cx="570.89" cy="395.55" r="3.1"></circle>
 	<circle transform="translate(224 178)" class="cls-6 trans test1" cx="690.89" cy="645.55" r="1.08"></circle>
 	<circle transform="translate(224 178)" class="cls-6 trans" cx="851.89" cy="345.55" r="2.78"></circle>
 	<circle transform="translate(224 178)" class="cls-6 trans" cx="790.89" cy="567.55" r="1.88"></circle>
