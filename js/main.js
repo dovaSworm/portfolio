@@ -5,7 +5,6 @@ function getYear() {
     document.querySelector("#displayYear").innerHTML = currentYear;
 }
 var navbar = $("#navbar");
-
 var ww = $(window).width();
 var wh = $(window).height();
 getYear();
@@ -13,14 +12,16 @@ var isMobile;
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     isMobile = true;
 }
-// toggler button
+
 if (isMobile) {
     if (hero + 100 < window.scrollY) {
         navbar.addClass('show');
     }
 }
+
+// toggler button
 $(".toggler").click(function () {
-    $(".nav-links").toggleClass("active")
+    $(".nav-links").toggleClass("active");
     $(".nav-link").click(function () {
         $(".nav-links").removeClass("active");
         $(".toggler").removeClass("hide");
@@ -54,6 +55,12 @@ $(".bio-nav").mouseover(function () {
         $(".education p, h5").removeClass("highlight");
     });
 });
+$(".project").mouseover(function () {
+    $(".project .const-img").addClass("stelar");
+    $(this).mouseleave(() => {
+        $(".project .const-img").removeClass("stelar");
+    });
+});
 $(".bio-nav").mouseover(function () {
     if ($(this).text() === "Major") {
         $(".skill-col span.major span.bulb").addClass("bulb-on");
@@ -74,14 +81,27 @@ $(".bio-nav").mouseover(function () {
 });
 
 function dodajAnimu() {
-    var about = document.getElementById("about-title").getBoundingClientRect().top;
-    console.log(about, wh / 2);
-    if (about < wh / 2) {
-        $("#about h2").addClass('smallin');
+    var webs = document.getElementsByClassName("websites")[0].getBoundingClientRect().top;
+    var proj = document.getElementsByClassName("projects")[0].getBoundingClientRect().top;
+    if (webs < wh) {
+        $(".websites h3").addClass('smallin');
+    }
+    if (proj < wh) {
+        $(".projects h3").addClass('smallin');
     }
 }
 
+function navbarAnima() {
+    if (wh / 2 < window.scrollY) {
+        navbar.addClass('show');
+    } else {
+        navbar.removeClass('show');
+    }
+}
+
+
 $(window).on('scroll', () => {
+    navbarAnima();
     dodajAnimu();
     // var hero = document.getElementById("hero").getBoundingClientRect().top;
     // var about = $("#about h2").offset().top;
@@ -95,9 +115,5 @@ $(window).on('scroll', () => {
     //     $("#about h2").addClass('smallin');
     // }
 
-    if (hero + 800 < window.scrollY) {
-        navbar.addClass('show');
-    } else {
-        navbar.removeClass('show');
-    }
+
 });
