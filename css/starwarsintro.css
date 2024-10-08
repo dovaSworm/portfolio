@@ -1,12 +1,10 @@
 .star-wars-intro {
-  /* background: url(/img/stars-bg.jpg) center center; */
   background: transparent;
   width: 100%;
   height: 100%;
   font-family: "Droid Sans", arial, verdana, sans-serif;
   font-weight: 700;
   color: white;
-  /* background-color: #000; */
   overflow: hidden;
   position: relative;
 }
@@ -71,7 +69,7 @@
   margin-left: -1.3em;
   line-height: 0.8em;
   letter-spacing: -0.05em;
-  color: #000;
+  color: rgba(2, 14, 22, 0.9176470588);
   text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
   opacity: 0;
   z-index: 1;

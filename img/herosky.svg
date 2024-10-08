@@ -6,40 +6,38 @@
             }
 
             .cls-2 {
-                fill: #00c1ff;
-            }
-
-            .cls-2,
-            .cls-3,
-            .cls-4 {
                 fill-opacity: 0.83;
+                fill: #5fc9ec;
             }
 
             .cls-3 {
+                fill-opacity: 0.83;
                 fill: #ca96ff;
             }
 
             .cls-4 {
+                fill-opacity: 0.83;
                 fill: #f3fb77;
             }
 
             .cls-5 {
+                fill-opacity: 0.83;
                 fill: #FFFFFF;
             }
 
             .cls-6 {
-                fill-opacity: 0.83;
-                fill: #4d64e7;
+                fill-opacity: 0.63;
+                fill: #6f84f8;
             }
 
             .cls-7 {
                 fill-opacity: 0.83;
-                fill: #702eff;
+                fill: #e96161;
             }
 
             .cls-8 {
-                fill-opacity: 0.4;
-                fill: #5bf79e;
+                fill-opacity: 0.63;
+                fill: #6feba5;
             }
 
             .cls-9 {
@@ -53,6 +51,7 @@
                 }
 
                 to {
+                    color: white;
                     opacity: .11;
 
                 }
@@ -65,6 +64,7 @@
                 }
 
                 to {
+                    color: white;
                     scale: 1.2;
                     opacity: .11;
 
@@ -78,6 +78,7 @@
                 }
 
                 to {
+                    color: white;
                     scale: .9;
                     opacity: .11;
                 }
@@ -89,6 +90,7 @@
                 }
 
                 to {
+                    color: white;
                     opacity: .11;
                 }
             }
